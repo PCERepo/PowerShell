@@ -1,4 +1,6 @@
-$excelFile = "C:\Users\daniel.hilliard\PCE Ltd\Process & Systems - General\BST Workspace\Database\Data Dump\Book1.xlsx"
+$userProfile = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::UserProfile)
+
+$excelFile = Join-Path $userProfile "PCE Ltd\Process & Systems - General\BST Workspace\Database\Data Dump\Book1.xlsm"
 $sheetName = "Sheet1"
 $sqlConnectionString = "Server=PCE-SQL-DEV;Database=pce;Integrated Security=True;"
 
